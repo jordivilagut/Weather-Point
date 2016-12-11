@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="wpApp">
+    <head>
+        <title>Weather Point</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="resources/CSS_Reset/reset.css">
+        <link rel="stylesheet" href="assets/styles/styles.css">
+    </head>
+
+    <body ng-controller="wpController">
+
+        <div class="temperatureSwitch">
+            <button class="left" ng-click="setMetric()" type="button" >ºC</button>
+            <button class="right" ng-click="setImperial()" type="button" >ºF</button>
+        </div>
+
+        <div class="mainBanner">
+            <p class="city">{{city}}, {{country}}</p>
+            <div class="data">
+                <p id="temp">{{temperature}}</p>
+                <div class="otherData">
+                    <img ng-src={{icon}}>
+                    <p class="description">{{description}}</p>
+                    <p class="small">Humidity: {{humidity}}</p>
+                    <p class="small">Pressure: {{pressure}}</p>
+                </div>
+            </div>
+            <div class="siteInfo">
+                <p>@WeatherPoint via&nbsp;</p>
+                <a href="http://openweathermap.org/api" target="_blank">OpenWeatherMap</a>
+            </div>
+        </div>
+
+        <script src="resources/AngularJS/angular.js"></script>
+        <script src="assets/scripts/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+body{
+    font-family: Open Sans;
+    background: rgb(39, 46, 56);
+    background-size: cover;
+}
+
+.temperatureSwitch {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.temperatureSwitch button {
+    background: rgba(255, 255, 255, .7);
+    border: solid rgb(179, 204, 230) 1px;  
+}
+
+button.left {
+    border-radius: 5px 0px 0px 5px;
+}
+
+button.right {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.mainBanner {
+    margin: 50px auto 0 auto;
+    background: whitesmoke;
+    width: 400px;
+}
+
+.data {
+    display: flex;
+    justify-content: space-around;
+}
+
+.city {
+    font-size: 25px;
+    padding: 5px;
+}
+
+#temp {
+    font-size: 60px;
+    padding: 20px;
+}
+
+.description {
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.siteInfo {
+    display: flex;
+    justify-content: center;
+    border-top: solid rgb(230, 230, 230) 1px;
+    font-size: 11px;
+    padding: 10px;
+    margin-top: 10px;
+}
